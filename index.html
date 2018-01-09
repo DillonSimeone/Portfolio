@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dillon Simeone</title>
+<link href="style.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div>
+		<section>
+			<h1>Web 1</h1>
+			<ul>
+				<li><a class ="RainBowRight" href="./projects/web1/project1/index.html">Project 1</a></li>
+				<li><a class ="RainBowRight" href="./projects/web1/project2/index.html">Project 2</a></li>
+				<li><a class ="RainBowRight" href="./projects/web1/project3/index.html">Project 3</a></li>
+			</ul>
+			<h1>Web 1 Playground</h1>
+			<ul>
+				<li><a class="RainBowRight" href="./playground/grandFatherClock/playground.html">Grandfather Clock</a></li></ul>
+			</ul>
+		</section>
+	</div>
+	<div>
+		<section>
+			<h1>Web 2 Homeworks</h1>
+			<ul>
+				<li><a class ="RainBowRight" href="./homeworks/web2/Homework03/modernStart.html">Homework 3</a></li>
+				<li><a class ="RainBowRight" href="./homeworks/web2/Homework07/BonnieJacobImproved.html">Homework 7</a></li>
+				<li><a class ="RainBowRight" href="./homeworks/web2/Homework10/JavaScripting.html">Homework 10</a></li>
+				<li><a class ="RainBowRight" href="./homeworks/web2/Homework14/index.html">Homework 14</a></li>
+				<li><a class ="RainBowRight" href="./homeworks/web2/Homework15/index.html">Homework 15</a></li>
+				<li><a class ="RainBowRight" href="./homeworks/web2/Homework16/index.php">Homework 16</a></li>
+				<li><a class ="RainBowRight" href="./homeworks/web2/Homework20/index.php">Homework 20</a></li>
+				<li><a class ="RainBowRight" href="https://kelvin.ist.rit.edu/~dys8701/homeworks/web2/Homework22/">Homework 22</a></li>
+				<li><a class ="RainBowRight" href="WorkInProcess.html">Homework ??</a></li>
+			</ul>
+			
+			<h1>Web2 Projects</h1>
+			<ul>
+				<li><a class ="RainBowRight" href="./projects/web2/Project1/index.html">Project One</a></li>
+			</ul>
+		
+			<h1>Web2 Playground</h1>
+			<ul>
+				<li><a class="RainBowRight" href="./playground/SSITEST/index.html">SSI test</a></li>
+				<li><a class="RainBowRight" href="./playground/KittyGirlWebsite/index.html">A website for a friend!</a></li>
+				<li><a class="RainBowRight" href="./playground/Infinity/loop.php">An infinite Php loop</a></li>
+				<li><a class="RainBowRight" href="./playground/prototypes/scrolling/GifScrollingPrototype.html">Prototype: Scrolling Gif</a></li>
+				<li><a class="RainBowRight" href="./playground/NotPirateyWebsite!/index.html">Work in Progress</a></li>
+			</ul>
+		</section>
+	</div>
+	
+	<div>
+		<section>
+			<h1>Group Project: Pet Amazon (ISTE 260.02)</h1>
+			<ul>
+				<li><a class ="RainBowRight" href="./groupProjects/PetAmazon/Website/HomePage/index.php">Pet Amazon</a></li>
+			</ul>
+			
+			<h1>Group Project: Web and Mobile 2 (ISTE 240.03)</h1>
+			<ul>
+				<li><a class ="RainBowRight" href="./groupProjects/Unix101/index.php">Unix 101</a></li>
+			</ul>
+		</section>
+	</div>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	var x = 0;
+	var y = 0;
+	var html = 0;
+	var body = 0;
+	var ul = 0;
+	var div =0;
+	var li = 0;
+	var filter = 0;
+	
+	function repeatOften() 
+	{
+		x += 1;
+        y -= 1;
+		html += 2;
+		body -= 2;
+		
+		
+		if(filter < 100)
+			filter += 1;
+	
+			$('html').css({'filter' : 'brightness(' + filter + '%)'});
+
+		$('html').css('background-position', x + 'px ' + y + 'px');
+		requestAnimationFrame(repeatOften);
+	}
+	requestAnimationFrame(repeatOften);
+	</script>
+</body>
+</html>
